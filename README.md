@@ -3,6 +3,11 @@
 - npm create-react-app netflix-gpt
 - setup project
 - configure the tailwind css in project
+- Header
+- login from
+  - sign in
+  - sign up
+  - from validation
 
 # Features
 
