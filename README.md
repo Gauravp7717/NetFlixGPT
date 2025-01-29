@@ -8,6 +8,13 @@
   - sign in
   - sign up
   - from validation
+- implemented authentication of user
+- setup redux store
+- created the user slice
+- browse page bug fixed
+- implement the sign out logic
+- registered to the TMDB api
+- Fetch() data from api
 
 # Features
 
