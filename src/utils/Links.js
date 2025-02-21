@@ -7,6 +7,9 @@ export const LOGO =
 export const UserICON =
   "https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg";
 
+export const V_URl =
+  "https://api.themoviedb.org/3/movie/movie_id/videos?language=en-US";
+
 export const options = {
   method: "GET",
   headers: {

@@ -15,6 +15,11 @@
 - implement the sign out logic
 - registered to the TMDB api
 - Fetch() data from api
+- created the movie slice
+- update the store
+- fetch the data from store
+- planned the main container and secondary container
+- design the main container and added the css for it
 
 # Features
 

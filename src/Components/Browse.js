@@ -1,23 +1,15 @@
-import React, { useEffect } from "react";
+import useNowPlay from "../hooks/useNowPlay";
 import Header from "./Header";
-import { options } from "../utils/Links";
+import MainContainer from "./MainContainer";
+import SecondoryContainer from "./SecondoryContainer";
 
 const Browse = () => {
-  const getRatedMovies = async () => {
-    const data = await fetch(
-      "https://api.themoviedb.org/3/discover/movie?include_adult=true&include_video=false&page=1&sort_by=popularity.desc",
-      options
-    );
-    const json = await data.json();
-    console.log(json);
-  };
-
-  useEffect(() => {
-    getRatedMovies();
-  }, []);
+  useNowPlay();
   return (
     <div>
       <Header />
+      <MainContainer />
+      <SecondoryContainer />
     </div>
   );
 };
