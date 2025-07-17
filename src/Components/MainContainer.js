@@ -11,7 +11,7 @@ const MainContainer = () => {
   // console.log("the main", mainMovie);
   const { original_title, overview } = mainMovie;
   const { id } = mainMovie;
-  console.log(id);
+  // console.log(id);
   return (
     <div>
       {/* the video and video background */}

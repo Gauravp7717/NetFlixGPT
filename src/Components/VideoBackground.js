@@ -1,14 +1,11 @@
 import React from "react";
-
 import { useSelector } from "react-redux";
 import useMovieTrailer from "../hooks/useMovieTrailer";
 
 const VideoBackground = ({ movieID }) => {
-  console.log("reciverd id :", movieID);
   useMovieTrailer(movieID);
 
   const trailerVideo = useSelector((store) => store.movies?.trailerVideo);
-  // console.log(trailerVideo?.key);
 
   return (
     <div className="w-screen">
@@ -17,10 +14,10 @@ const VideoBackground = ({ movieID }) => {
         src={
           "https://www.youtube.com/embed/" +
           trailerVideo?.key +
-          "?&autoplay=1&mute=1"
+          "?autoplay=1&mute=1&loop=1&playlist=" +
+          trailerVideo?.key
         }
         title="YouTube video player"
-        autoplay="1"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerPolicy="strict-origin-when-cross-origin"
       ></iframe>
