@@ -20,3 +20,9 @@ export const options = {
 };
 
 export const IMG_CDN = "https://image.tmdb.org/t/p/w400";
+
+export const LANG = [
+  { identifier: "en", name: "English" },
+  { identifier: "marathi", name: "Marathi" },
+  { identifier: "hindi", name: "Hindi" },
+];

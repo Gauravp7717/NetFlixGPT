@@ -40,3 +40,4 @@
     - search bar
     - the feature which suggest the movie according to the prompt
     - the open AI
+    - created the multi language button for changing the language
